@@ -20,7 +20,7 @@ For this project, we were given a simple webpage and told to make it fit the acc
 -WHEN I view the title element
 -THEN I find a concise, descriptive title
 
-https://kingcrowz.github.io/Zaleski-01-homework/
+https://kingcrowz.github.io/Zaleski-02-Homework/
 
 ![website image](assets/images/Screenshot.png)
  
