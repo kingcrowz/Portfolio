@@ -27,7 +27,7 @@ header h1 {
     color: rgb(30, 31, 31);
     background-color: teal;
 }
-/*Sets up name block of the header, as well as selecting text and bkg color.*/
+/*Sets up name block of the header, as well as selecting font-size and bkg color.*/
 
 
 header nav {
@@ -63,11 +63,14 @@ p {
 }
 /*Changes font size for non-title content*/
 
-
 footer {
     padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(30, 31, 31);
+    background-color: teal;
 }
 /* Increase of space between the content and border 
    Sets up a few different options for font and sets font size
@@ -88,8 +91,8 @@ footer ul li {
 /* Underlines the text and increases left margin space */
 
 footer ul li a {
-    color: black;
     text-align: right;
+    color: rgb(30, 31, 31);
 }
 /* Sets text color to black */
 
@@ -106,13 +109,13 @@ footer ul li a {
    Increases space for the margin to occupy on the bottom
    Resizes the image to fit a certain size and centers it within the page*/
 
-
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+#projSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/* Sets up a size in terms of width for the main section and sets the left margin */
+/* Centers content and flexes its direction */
 
 main a {
     color: black;
@@ -121,10 +124,12 @@ main a {
 /* Sets text color and font size */
 
 main h2 {
-    color: black;
-    font-size: 40;
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(30, 31, 31);
+    background-color: teal;
 }
-/* Sets text color and font size */
+/* Sets text color, font size, and background color */
 
 .holder h2{
    text-align: center;
@@ -154,6 +159,7 @@ main h2 {
     width: 70%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
 }
 /*.benefits is the side content window next to the .content section
 Increase of space between the content and border 
@@ -202,41 +208,57 @@ Sets background color using rbg codes to define color*/
     background-color: #ffffff;
     color: #ffffff;
 }
+/* Sets up a bottom margin, and padding
+sets a height value of 300px 
+sets up a few font families
+sets up a text and background color*/
+
+
 #search-engine-optimization {
-    max-width: 95%;
+    width: 250px;
+    height: 200px;
     background-image: url("../images/Passwordgenerator.png");
 }
+/* Sets up a height, width, and background image */
+
 #online-reputation-management {
-    max-width: 80%;
+    width: 250px;
+    height: 200px;
     background-image: url("../images/Dayplanner.jpeg");
 }
+/* Sets up a height, width, and background image */
+
 #fixed-site {
-    max-width: 80%;
+    width: 700px;
+    height: 400px;
     background-image: url("../images/Refract.jpg");
 }
+/* Sets up a height, width, and background image */
+
 #social-media-marketing {
-    max-width: 80%;
+    width: 250px;
+    height: 200px;
     background-image: url("../images/Calculator.jpg");
 }
+/* Sets up a height, width, and background image */
 
-  main img{
-      max-height: 200px;
-  }
-/*  Sets a maximum height value of 200 pixels for image
-    All 3 img's had same max height, so they were consolidated into one*/
+.row-section{
+    display:flex;
+    justify-content: space-between;
+    width: 700px;
+}
+/* sets up properties for the flexbox section */
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
-    
 }
-/*Increase of space between the content and border, and sets font size
-  Originally, all 3 IDs in class content had their own identical class,
-    so they were consolidated into one*/
+/* sets up a bottom margin and font size */
 
 .search-engine-optimization:hover{
     opacity: .75;
 }
+/* on hover, this allows the application boxes to appear as if they are highlighted */
 
 @media screen and (max-width: 768px) {
     main {
