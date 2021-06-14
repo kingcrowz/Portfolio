@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* applies base properties to everything contained within the page */
+
+body {
+    background-color: rgb(30, 31, 31);;
+}
+/* Sets background color using hex codes to define color */
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(30, 31, 31);
+    color: #ffffff;
+}
+/* Increase of space between the content and border 
+   Sets up a few different options for font
+   Sets background color using hex codes to define color
+   Sets text color using hex codes to define color*/
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(30, 31, 31);
+    background-color: teal;
+}
+/*Sets up name block of the header, as well as selecting text and bkg color.*/
+
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* Increase of space between the content and border
+   Increase of space for the right margin to occupy 
+   Brings the nav content to other side to space from Logo
+   Sets up a few different options for font and sets font size */
+
+
+header nav ul li {    
+    display: inline-block;
+    margin-left: 25px;
+    text-align: right;
+}
+/*allows these units to display left to right instead of stacked
+  Increase of space for the left margin to occupy*/
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*Uses hex codes to define color
+and removes decoration from nav links*/
+
+p {
+    font-size: 16px;
+}
+/*Changes font size for non-title content*/
+
+
+footer {
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/* Increase of space between the content and border 
+   Sets up a few different options for font and sets font size
+   Centers the text for the page footing
+*/
+
+footer h2 {
+    font-size: 20px;
+}
+/*Sets font size for the content at the bottom of footer*/
+
+footer ul li {
+    text-decoration: underline;
+    margin-left: 25px;
+    display: inline-block
+    
+}
+/* Underlines the text and increases left margin space */
+
+footer ul li a {
+    color: black;
+    text-align: right;
+}
+/* Sets text color to black */
+
+.Projects {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Chevron.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/*.Projects sets up a background image
+   Sets up a defined height for image and a dynamic width
+   Increases space for the margin to occupy on the bottom
+   Resizes the image to fit a certain size and centers it within the page*/
+
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* Sets up a size in terms of width for the main section and sets the left margin */
+
+main a {
+    color: black;
+    font-size: 40px;
+}
+/* Sets text color and font size */
+
+main h2 {
+    color: black;
+    font-size: 40;
+}
+/* Sets text color and font size */
+
+.holder h2{
+   text-align: center;
+}
+/* Centers the text */
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*Pulls content to the left
+ Increases space for the margin to occupy on the right*/
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/*Pulls content to the right
+ Increases space for the margin to occupy on the left*/
+
+.holder {
+    color: rgb(30, 31, 31);
+    text-align: center;
+    background-color: teal;
+    margin-right: 20px;
+    padding: 20px;
+    width: 70%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*.benefits is the side content window next to the .content section
+Increase of space between the content and border 
+Increases space for the margin to occupy on the right
+Float:right allows it to apply itself to the right of .content instead of on it own line
+Sets up a maximum width and gives benefits box no maximum height
+Sets up a few different options for font and sets font size
+Sets background color using rbg codes to define color*/
+
+
+.About-Me {
+    margin-bottom: 32px;
+}
+/*Increases space for the margin to occupy on the bottom*/
+
+.About-Me h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Sets the bottom margin for H3 headers to 10px and centers it */
+
+.About-Me a {
+    color: rgb(30, 31, 31);
+}
+/*Increases space for the margin to occupy on the bottom
+  Aligns the text in the center of the box*/
+
+
+.About-Me img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/*Display:block centers the image in the box on the X axis
+  Sets up margin values
+  Sets a maximum width for the image to display within
+  All 3 classes within benefits had identical style.css code,
+    so it was consolidated from 3 to 1*/
+
+
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+#search-engine-optimization {
+    max-width: 95%;
+    background-image: url("../images/Passwordgenerator.png");
+}
+#online-reputation-management {
+    max-width: 80%;
+    background-image: url("../images/Dayplanner.jpeg");
+}
+#fixed-site {
+    max-width: 80%;
+    background-image: url("../images/Refract.jpg");
+}
+#social-media-marketing {
+    max-width: 80%;
+    background-image: url("../images/Calculator.jpg");
+}
+
+  main img{
+      max-height: 200px;
+  }
+/*  Sets a maximum height value of 200 pixels for image
+    All 3 img's had same max height, so they were consolidated into one*/
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    
+}
+/*Increase of space between the content and border, and sets font size
+  Originally, all 3 IDs in class content had their own identical class,
+    so they were consolidated into one*/
+
+.search-engine-optimization:hover{
+    opacity: .75;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    }
+  
