@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Fixed Website</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+   
+</head>
+
+<body>
+    <header>
+        <h1>Zaleski</h1>
+        <img src="./assets/images/Brannigan.jpg" class="float-left" alt="Placeholder avatar img" style= "width:75px; height:75px;"/>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#About-Me">About Me</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Work</a>
+                </li>
+                <li>
+                    <a href="#ContactMe">Contact Me</a>
+                </li>
+                <li>
+                  <a href="#social-media-marketing">Resume</a>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Projects"></div>
+    <main class="holder">
+        <h2>About Me</h2>
+        <div class="About-Me" id="About-Me">
+            <h3>Rutger's Graduate</h3>
+            <a>
+                  In 2018, I graduated Rutger's University with a double major in Criminal Justice and Philosophy.
+            </a>
+        </div>
+        <div class="About-Me">
+            <h3>Revelent Experience</h3>
+            <a>
+                  For my technical education, I went through the U Penn Full Stack Developer bootcamp course.
+            </a>
+        </div>
+        <div class="About-Me">
+            <h3>Personals Fact</h3>
+            <a>
+                  I am 25, and enjoy playing WoW.  I hope to see you on the plains of Nagrand!
+            </a>
+        </div>
+    </main>
+    <main>
+        <section class="search-engine-optimization" id="search-engine-optimization">
+            <!-- <img src="./assets/images/Passwordgenerator.png" class="float-left" alt="Search Engine Optimization Image" /> -->
+            <a href="https://kingcrowz.github.io/Zaleski-01-homework/">Password Generator</a>
+            <p>
+            </p>
+        </section>
+        <section id="online-reputation-management" class="search-engine-optimization">
+            <!-- <img src="./assets/images/Dayplanner.jpeg" class="float-left" alt="Day planner img" /> -->
+            <a href="https://kingcrowz.github.io/Zaleski-01-homework/">Day Planner</a>
+            <p>
+            </p>
+        </section>
+        <section id="fixed-site" class="search-engine-optimization">
+            <!-- <img src="./assets/images/Refract.jpg" class="float-left" alt="Refracted Website img"/> -->
+            <a href="https://kingcrowz.github.io/Zaleski-01-homework/">Refracted Website</a>
+            <p>
+            </p>
+        </section>
+        <section id="social-media-marketing" class="search-engine-optimization">
+            <!-- <img src="./assets/images/Calculator.jpg" class="float-left" alt="Calculator Img"/> -->
+            <a href="https://kingcrowz.github.io/Zaleski-01-homework/">Calculator</a>
+            <p>
+            </p>
+        </section>
+    </main>
+    <footer id="ContactMe">
+        <h2>Contact Me!</h2>
+       <ul>
+           <li>
+               <a href="#">My Email</a>
+           </li>
+           <li>
+            <a href="#">My Phone Number</a>
+            </li>
+            <li>
+                <a href="https://github.com/kingcrowz">My Github</a>
+            </li>
+            <li>
+                <a href="#">Social Media Page</a>
+            </li>
+       </ul>
+    </footer>
+    <script>
+        // Define selector for selecting
+        // anchor links with the hash
+        let anchorSelector = 'a[href^="#"]';
+      
+        // Collect all such anchor links
+        let anchorList = 
+            document.querySelectorAll(anchorSelector);
+          
+        // Iterate through each of the links
+        anchorList.forEach(link => {
+            link.onclick = function (e) {
+      
+                // Prevent scrolling if the
+                // hash value is blank
+                e.preventDefault();
+          
+                // Get the destination to scroll to
+                // using the hash property
+                let destination = 
+                    document.querySelector(this.hash);
+          
+                // Scroll to the destination using
+                // scrollIntoView method
+                destination.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
