@@ -6,21 +6,36 @@ Provide a short description explaining the what, why, and how of your project. U
 - During my time working on this project, I have gained a new appreciation for those who are adept at building code from the ground up, its a lot more work than I would have thought.
 - During the work, I realized just how hard code can be to read at the end of you work, because selectors can be all over the place.  So this taught me the importance of commenting and consolidating
 
-## Usage
-For this project, we were given a simple webpage and told to make it fit the acceptance criteria:
--GIVEN a webpage meets accessibility standards
--WHEN I view the source code
--THEN I find semantic HTML elements
--WHEN I view the structure of the HTML elements
--THEN I find that the elements follow a logical structure independent of styling and positioning
--WHEN I view the image elements
--THEN I find accessible alt attributes
--WHEN I view the heading attributes
--THEN they fall in sequential order
--WHEN I view the title element
--THEN I find a concise, descriptive title
+## User Story
 
-https://kingcrowz.github.io/Zaleski-02-Homework/
+```
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+```
+
+
+## Acceptance Criteria
+
+Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+
+```
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+```
+
+https://kingcrowz.github.io/Zaleski-01-homework/
 
 ![website image](assets/images/Screenshot.png)
  
