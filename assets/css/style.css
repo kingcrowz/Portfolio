@@ -64,6 +64,7 @@ p {
 /*Changes font size for non-title content*/
 
 footer {
+    width: 100%;
     padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
@@ -265,4 +266,14 @@ sets up a text and background color*/
       flex-direction: column;
     }
     }
+
+@media screen and (max-width: 500px) {
+     .row-section {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        flex-direction: column;
+    }
+    }
+            
   
