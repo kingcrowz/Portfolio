@@ -55,6 +55,10 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+
+section section a {
+    background-color: white;
+}
 /*Uses hex codes to define color
 and removes decoration from nav links*/
 
