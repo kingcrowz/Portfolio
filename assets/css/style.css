@@ -55,12 +55,13 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+/*Uses hex codes to define color
+and removes decoration from nav links*/
 
 section section a {
     background-color: white;
 }
-/*Uses hex codes to define color
-and removes decoration from nav links*/
+/*sets the background color to white for the links on my projects*/
 
 p {
     font-size: 16px;
