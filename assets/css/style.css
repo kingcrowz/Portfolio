@@ -223,23 +223,24 @@ sets up a text and background color*/
 #search-engine-optimization {
     width: 250px;
     height: 200px;
-    background-image: url("../images/WDP.png");
+    background-image: url("../images/movieproject.png");
 }
 /* Sets up a height, width, and background image */
 
 #online-reputation-management {
     width: 250px;
     height: 200px;
-    background-image: url("../images/weather.png");
+    background-image: url("../images/NoteTaker.png");
 }
 /* Sets up a height, width, and background image */
 
 #fixed-site {
     width: 700px;
     height: 400px;
-    background-image: url("../images/movieproject.png");
+    background-image: url("../images/Grove.png");
 }
 /* Sets up a height, width, and background image */
+
 
 #social-media-marketing {
     width: 250px;
